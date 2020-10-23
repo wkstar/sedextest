@@ -4,15 +4,15 @@ info:
   contact:
     email: connect.support@ninjasrock.com
     name: Connect Support
-  description: Companies endpoint API
-  title: Companies API
+  description: Company endpoint API
+  title: Company API
   version: 0.0.1
 
 servers:
   - url: http://localhost:8091
 
 paths:
-  /companies:
+  /company:
     post:
       summary: Create an Company
       description: Create a company
@@ -40,10 +40,8 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Companies"
-  /companies/{id}:
+                $ref: "#/components/schemas/CompanyList"
+  /company/{id}:
     get:
       summary: Get Company Endpoint
       description: Returns a single company
@@ -132,6 +130,6 @@ components:
           type: string
       required:
         - id
-    Companies:
+    CompanyList:
       items:
         $ref: '#/components/schemas/CompanyResponse'

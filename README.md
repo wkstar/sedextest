@@ -1,35 +1,22 @@
 # README #
 
-### Sedex Connect - Tech Test FullStack
+### Sedex Connect - Tech Test Fullstack
 
 This is an example technical test for a full stack developer. It aims to give the interviewee the opportunity to show 
-their knowledge of full stack development. We do not restrict your choice of technology, use whatever you want to 
-get the job done. 
+their knowledge by implementing the `POST /company` method of the [open api spec](./companies-openapi3.yaml) 
+in either the frontend OR the backend 
 
-We are after a vertical slice in functionality, a frontend, calling a backend service API, with tests. 
-We are after the simplest means of doing so. 
+If you choose the to implement frontend please do so in React, feel free to use whatever libs to assist your implementation:
+- Create a page that will allow a user to submit a company via a form and display the response.
 
-The functionality we are after:
+If you choose to implement the backend please do Kotlin, feel free to use whatever libs to assist your implementation.
+- Expose the endpoint as a Restful HTTP service returning a JSON response as per the api spec.
 
-* Implement the company api spec in the backend service.
-    * Use an in memory persistence layer
-* Implement a frontend to call the backend API.
-    * A simple form with a field to capture the Id and button to call the GET /companies/id
-    * Display the returned company details
-* Testing of both FE and BE and possible integration tests
-* Either deploy remotely or provide instructions on how to run locally.
+We are looking for clean and tested code with instructions on how to run the application locally. 
 
+The project can be organised you see fit, however we do ask that all the code required to run the solution is 
+submitted to a publicly accessible VCS of your choice for us to review.
 
-Generally we use the following tech stack:
+Please time box the exercise to  a maximum of two hours. If you can complete all of the exercise in that time 
 
-- React JS
-- Java/Kotlin Backend services
-- Docker
-- Bitbucket pipelines
-- AWS, EKS
-
-
-The projects can be organised you see fit, however we do ask that all the code required to run the solution is 
-submitted to version control for us to review.
-
-Please time box the exercise to an hour and half.
+Thanks!
