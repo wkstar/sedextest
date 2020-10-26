@@ -17,7 +17,8 @@ but please include the dependencies in the build tool.
 - Expose the endpoint as a Restful HTTP service consuming and returning a JSON response as per the api spec.
 - Due to time constraints we suggest you use an in memory persistence layer
 
-We are looking for clean and tested code with instructions on how to run the application locally. 
+We are looking for clean and tested code. Please provide a courteous README notes on tools and libs you might have used 
+and with instructions on how to run the application locally.
 
 The project can be organised you see fit, however we do ask that all the code required to run the solution is 
 submitted to a publicly accessible VCS of your choice for us to review.
