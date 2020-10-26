@@ -5,12 +5,12 @@
 This is an example technical test for a full stack developer. 💻
 
 It aims to give the interviewee the opportunity to show their knowledge by implementing the `POST /company` 
-method of the [open api spec](./companies-openapi3.yaml) in either the frontend OR the backend. 
+method of the [open api spec](./companies-openapi3.yaml) in either the frontend OR the backend.  
 
 If you choose the to implement frontend please do so in React, feel free to use whatever libs to assist your 
 implementation but please include the dependencies in the build tool:
 - Create a page that will allow a user to submit a company via a form and display the response.
-- You can use the following endpoint to implement against: 
+- You can use the following endpoint to implement against: https://demo-sedex-apim-gateway.cloud.gravitee.io/interview/v0/...
 
 If you choose to implement the backend please do Kotlin, feel free to use whatever libs to assist your implementation 
 but please include the dependencies in the build tool.

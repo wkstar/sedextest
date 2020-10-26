@@ -9,7 +9,10 @@ info:
   version: 0.0.1
 
 servers:
-  - url: http://localhost:8091
+  - url: '{server}/interview/v0'
+    variables:
+      server:
+        default: https://demo-sedex-apim-gateway.cloud.gravitee.io
 
 paths:
   /company:
