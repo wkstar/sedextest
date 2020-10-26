@@ -1,0 +1,44 @@
+# Company API
+# Company endpoint API
+
+###
+
+# Create an Company
+# 
+# Create a company
+POST {{host}}/company
+Content-Type: application/json
+
+{
+    "companyName": "companyName",
+    "companyType": "companyType",
+    "natureofBusiness": "natureofBusiness",
+    "incorporatedDate": "incorporatedDate",
+    "emailAddress": "emailAddress",
+    "phoneNumber": "phoneNumber",
+    "address": {
+        "addressLine1": "address.addressLine1",
+        "addressLine2": "address.addressLine2",
+        "city": "address.city",
+        "state": "address.state",
+        "postalCode": "address.postalCode",
+        "countryCode": "address.countryCode"
+    }
+}
+
+###
+
+# Get Company Endpoint
+# 
+# Returns a single company
+GET {{host}}/company
+
+###
+
+# Get Company Endpoint
+# 
+# Returns a single company
+GET {{host}}/company/{{param_id}}
+
+###
+

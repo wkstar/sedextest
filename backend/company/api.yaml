@@ -1,0 +1,139 @@
+openapi: 3.0.0
+
+info:
+  contact:
+    email: connect.support@ninjasrock.com
+    name: Connect Support
+  description: Company endpoint API
+  title: Company API
+  version: 0.0.1
+
+servers:
+  - url: '{server}/interview/v0'
+    variables:
+      server:
+        default: https://demo-sedex-apim-gateway.cloud.gravitee.io
+
+paths:
+  /company:
+    post:
+      summary: Create an Company
+      description: Create a company
+      requestBody:
+        description: Company object to be created
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CompanyRequest'
+
+        required: true
+      responses:
+        200:
+          description: A Company Response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompanyResponse"
+    get:
+      summary: Get Company Endpoint
+      description: Returns a single company
+      responses:
+        200:
+          description: A Company Response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompanyList"
+  /company/{id}:
+    get:
+      summary: Get Company Endpoint
+      description: Returns a single company
+      parameters:
+        - in: path
+          name: id
+          required: true
+          style: matrix
+          schema:
+            type: string
+      responses:
+        200:
+          description: A Company Response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompanyResponse"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: string
+              example: Resource Not Found
+
+
+components:
+  schemas:
+    CompanyAddress:
+      type: object
+      properties:
+        addressLine1:
+          type: string
+        addressLine2:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        postalCode:
+          type: string
+        countryCode:
+          type: string
+    CompanyRequest:
+      type: object
+      properties:
+        companyName:
+          type: string
+        companyType:
+          type: string
+        natureofBusiness:
+          type: string
+        incorporatedDate:
+          type: string
+        emailAddress:
+          type: string
+        phoneNumber:
+          type: string
+        address:
+          $ref: '#/components/schemas/CompanyAddress'
+      required:
+        - name
+    CompanyResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        companyName:
+          type: string
+        companyType:
+          type: string
+        natureofBusiness:
+          type: string
+        incorporatedDate:
+          type: string
+        emailAddress:
+          type: string
+        phoneNumber:
+          type: string
+        address:
+          $ref: '#/components/schemas/CompanyAddress'
+        createdTime:
+          type: string
+        updatedTime:
+          type: string
+      required:
+        - id
+    CompanyList:
+      items:
+        $ref: '#/components/schemas/CompanyResponse'
+
