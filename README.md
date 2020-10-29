@@ -10,7 +10,7 @@ If you choose the to implement frontend please do so in React, feel free to use 
 implementation but please include the dependencies in the build tool:
 
 - Create a page that will allow a user to submit a company via a form and display the response.
-- You can use the following endpoint to implement against: https://demo-sedex-apim-gateway.cloud.gravitee.io/interview/v0/...
+- You can use the following endpoint to implement against: https://sedex-apim-gateway.cloud.gravitee.io/interview/v0/...
 
 
 ### Backend

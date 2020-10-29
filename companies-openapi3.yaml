@@ -12,7 +12,7 @@ servers:
   - url: '{server}/interview/v0'
     variables:
       server:
-        default: https://demo-sedex-apim-gateway.cloud.gravitee.io
+        default: https://sedex-apim-gateway.cloud.gravitee.io
 
 paths:
   /company:
