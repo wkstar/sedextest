@@ -1,0 +1,33 @@
+image: openjdk:8
+
+options:
+  max-time: 5
+
+pipelines:
+  default:
+    - step:
+        name: "test & build backend"
+        caches:
+          - gradle
+        script:
+          - cd backend/company
+          - export TESTCONTAINERS_RYUK_DISABLED=true
+          - ./gradlew build
+        services:
+          - docker
+        artifacts:
+          - build/reports/**
+    - step:
+        name: "test & build frontend"
+        caches:
+          - node
+        script:
+          - yarn
+          - yarn build
+        artifacts:
+          - build/**
+
+definitions:
+  services:
+    docker:
+      memory: 2048
