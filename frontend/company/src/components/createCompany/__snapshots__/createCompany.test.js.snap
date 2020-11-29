@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createCompany renders the form 1`] = `
+<DocumentFragment>
+  <form
+    class="css-1l4w6pd"
+  >
+    <div
+      class="css-11818vl"
+    >
+      <h1
+        class="css-0"
+      >
+        Create a Company
+      </h1>
+      <div
+        class="css-95sj21"
+      >
+        <div
+          class="css-1h3zg0j"
+        >
+          <label
+            for="companyName"
+          >
+            Company Name
+          </label>
+        </div>
+        <div
+          class="css-1h3zg0j"
+        >
+          <input
+            autocomplete="off"
+            id="companyName"
+            name="companyName"
+            placeholder="e.g. Sedex"
+          />
+        </div>
+        <div
+          class="css-u41sxy"
+        >
+          <div
+            class="css-1ejw6fi"
+          />
+        </div>
+      </div>
+      <div
+        class="css-95sj21"
+      >
+        <div
+          class="css-1h3zg0j"
+        >
+          <label
+            for="companyType"
+          >
+            Company Type
+          </label>
+        </div>
+        <div
+          class="css-1h3zg0j"
+        >
+          <input
+            autocomplete="off"
+            id="companyType"
+            name="companyType"
+            placeholder="e.g. NGO"
+          />
+        </div>
+        <div
+          class="css-u41sxy"
+        >
+          <div
+            class="css-1ejw6fi"
+          />
+        </div>
+      </div>
+      <div
+        class="css-95sj21"
+      >
+        <input
+          class="css-y1gt6f"
+          type="submit"
+          value="Create the Company"
+        />
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
