@@ -7,15 +7,24 @@ I only show the id from the response. I didn't see much value in displaying the 
 
 I used this as an opportunity to try out 2 libraries I'd not used before, [React Query](https://github.com/tannerlinsley/react-query) and [React Hook Form](https://react-hook-form.com/)
 
-
-## To run
+## To setup
 ```
 	cd frontend/company
 	npm i
+```
+
+## To run
+```
 	npm start
 ```
 
 Remember to make sure the cors is off!
+
+## To test
+```
+	npm test
+```
+
 ## Things I'd do if I had more time:
 
 - Non trivial validation.
